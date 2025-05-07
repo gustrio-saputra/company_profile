@@ -1,103 +1,405 @@
 import Image from "next/image";
+import HeroInfo from "@/components/HeroInfo";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              app/page.js
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <>
+      {/* title */}
+      <div className="py-20">
+        <h1 className="sm:text-6xl/tight text-5xl/tight sm:text-center text-left ">
+          Bangun Cerita Visual <br />Untuk Bisnis Anda!
+        </h1>
+      </div>
+      {/* title */}
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+      {/* Hero Image */}
+      <div className="max-w-10xl mx-auto relative">
+        <Image src="/assets/company1.jpeg" alt="Hero Image" priority width={1920} height={1280} />
+        <HeroInfo />
+      </div>
+      {/* Hero Image */}
+
+      <div className="mt-32 max-w-7xl mx-auto px-4 md:px-0">
+        <div className="grid md:grid-cols-2 gap-12 items-center">
+          {/* Gambar/Visual */}
+          <div className="relative w-full aspect-[2/2] overflow-hidden rounded-2xl shadow-xl">
             <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
+              src="/assets/logo1.jpg"
+              alt="Tentang Kami"
+              fill
+              className="object-cover"
+              priority
             />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+          </div>
+
+          {/* Teks */}
+          <div>
+            <h1 className="text-4xl font-bold mb-4">Tentang Framework Visual</h1>
+            <p className="text-base/relaxed text-slate-700 mb-6 text-justify font-semibold text-xl">
+              Studio kreatif multifungsi- Spesialis yang tidak hanya menawarkan sesi fotografi, tetapi juga layanan penuh  konten digital, dan desain grafis.
+            </p>
+            <p className="text-base/relaxed text-slate-700 mb-6 text-justify text-xl">
+              Framework Visual adalah studio kreatif yang berfokus pada penyediaan solusi visual
+              profesional untuk kebutuhan bisnis dan personal. Dengan pengalaman lebih dari 5 tahun,
+              kami telah membantu ratusan klien dalam membangun identitas visual yang kuat melalui
+              fotografi, videografi, konten digital, dan desain grafis yang inovatif.
+            </p>
+            <ul className="space-y-3 text-base text-slate-700">
+              <li className="flex items-start gap-2 font-bold text-xl">
+                <i className="ri-check-line text-green-600 mt-0"></i>
+                Tim profesional dengan latar belakang industri kreatif
+              </li>
+              <li className="flex items-start gap-2 font-bold text-xl">
+                <i className="ri-check-line text-green-600 mt-0"></i>
+                Portofolio luas dari UMKM hingga perusahaan besar
+              </li>
+              <li className="flex items-start gap-2 font-bold text-xl">
+                <i className="ri-check-line text-green-600 mt-0"></i>
+                Pelayanan end-to-end dari konsep hingga eksekusi
+              </li>
+              <li className="flex items-start gap-2 font-bold text-xl">
+                <i className="ri-check-line text-green-600 mt-0"></i>
+                Satu tempat solusi semua kebutuhan visual (foto, video, desain).
+              </li>
+              <li className="flex items-start gap-2 font-bold text-xl">
+                <i className="ri-check-line text-green-600 mt-0"></i>
+                Cocok untuk UKM yang ingin "naik kelas" lewat branding kuat.
+              </li>
+            </ul>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+      </div>
+      {/* End Tentang Kami */}
+
+      {/* Layanan */}
+      <div className="mt-32">
+        <h1 className="text-4xl/normal text-center font-semibold">Layanan Dan Produk Kami</h1>
+        <div className="grid lg:grid-cols-3 mt-32 gap-10 md:grid-cols-2 grid-cols-1">
+          <div className="shadow-2xl p-7 rounded-2xl">
+            <i className="ri-money-dollar-circle-fill ri-3x text-slate-700"></i>
+            <p className="font-semibold text-2xl/normal mb-2">Harga Terbaik</p>
+            <p className="text-base/loose">lorem ipsum 15 kata</p>
+          </div>
+          <div className="shadow-2xl p-7 rounded-2xl">
+            <i className="ri-service-fill ri-3x text-slate-700"></i>
+            <p className="font-semibold text-2xl/normal mb-2">Full Service Terbaik</p>
+            <p className="text-base/loose">lorem ipsum 15 kata</p>
+          </div>
+          <div className="shadow-2xl p-7 rounded-2xl">
+            <i className="ri-star-s-fill ri-3x text-slate-700"></i>
+            <p className="font-semibold text-2xl/normal mb-2">Hasil Terbaik</p>
+            <p className="text-base/loose">lorem ipsum 15 kata</p>
+          </div>
+        </div>
+        <div className="mt-25 grid lg:grid-cols-3 gap-10 md:grid-cols-2 grid-cols-1">
+
+          <div className="shadow-2xl p-4 rounded-2xl">
+            <div className="relative w-full aspect-square rounded-t-2xl overflow-hidden">
+              <Image
+                src="/assets/produk1.png"
+                alt="Produk"
+                fill
+                className="object-cover"
+                priority
+              />
+            </div>
+            <h1 className="mt-6 mb-3 text-2xl font-semibold">Fotografi Profesional</h1>
+
+            <ul className="space-y-2 text-base">
+              <li className="flex items-start gap-2">
+                <i className="ri-check-line text-green-600 mt-0"></i>
+                Event-wedding,seminar,konser dll
+              </li>
+              <li className="flex items-start gap-2">
+                <i className="ri-check-line text-green-600 mt-0"></i>
+                Company Profile
+              </li>
+              <li className="flex items-start gap-2">
+                <i className="ri-check-line text-green-600 mt-0"></i>
+                Personal Branding
+              </li>
+              <li className="flex items-start gap-2">
+                <i className="ri-check-line text-green-600 mt-0"></i>
+                Produk
+              </li>
+            </ul>
+
+            <div className="mt-6 mb-3">
+              <Link
+                href="/detail"
+                className="bg-slate-700 text-white text-center p-3 rounded-xl hover:bg-slate-600 cursor-pointer"
+              >
+                Lihat Detail
+              </Link>
+            </div>
+          </div>
+
+
+
+          <div className="shadow-2xl p-4 rounded-2xl">
+            <div className="relative w-full aspect-square rounded-t-2xl overflow-hidden">
+              <Image
+                src="/assets/produk22.webp"
+                alt="Produk"
+                fill
+                className="object-cover"
+                priority
+              />
+            </div>
+            <h1 className="mt-6 mb-3 text-2xl font-semibold">Konten Visual</h1>
+
+            <ul className="space-y-2 text-base">
+              <li className="flex items-start gap-2">
+                <i className="ri-check-line text-green-600 mt-0"></i>
+                Produksi Foto Dan video Produk
+              </li>
+              <li className="flex items-start gap-2">
+                <i className="ri-check-line text-green-600 mt-0"></i>
+                Reels dan Feed Tiktok,IG, Facebook
+              </li>
+              <li className="flex items-start gap-2">
+                <i className="ri-check-line text-green-600 mt-0"></i>
+                YouTube
+              </li>
+              <li className="flex items-start gap-2">
+                <i className="ri-check-line text-green-600 mt-0"></i>
+                Testimonial Dll
+              </li>
+            </ul>
+
+            <div className="mt-6 mb-3">
+              <Link
+                href="/detail"
+                className="bg-slate-700 text-white text-center p-3 rounded-xl hover:bg-slate-600 cursor-pointer"
+              >
+                Lihat Detail
+              </Link>
+            </div>
+          </div>
+
+
+          <div className="shadow-2xl p-4 rounded-2xl">
+            <div className="relative w-full aspect-square rounded-t-2xl overflow-hidden">
+              <Image
+                src="/assets/produk3.jpg"
+                alt="Produk"
+                fill
+                className="object-cover"
+                priority
+              />
+            </div>
+            <h1 className="mt-6 mb-3 text-2xl font-semibold">Desain Grafis</h1>
+
+            <ul className="space-y-2 text-base">
+              <li className="flex items-start gap-2">
+                <i className="ri-check-line text-green-600 mt-0"></i>
+                Logo
+              </li>
+              <li className="flex items-start gap-2">
+                <i className="ri-check-line text-green-600 mt-0"></i>
+                Branding Kit - Company Profile, Katalog, Packaging
+              </li>
+              <li className="flex items-start gap-2">
+                <i className="ri-check-line text-green-600 mt-0"></i>
+                Banner, Dll
+              </li>
+              {/* <li className="flex items-start gap-2">
+                <i className="ri-check-line text-green-600 mt-0"></i>
+                DLL
+              </li> */}
+            </ul>
+
+            <div className="mt-6 mb-3">
+              <Link
+                href="/detail"
+                className="bg-slate-700 text-white text-center p-3 rounded-xl hover:bg-slate-600 cursor-pointer"
+              >
+                Lihat Detail
+              </Link>
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+      {/* Layanan */}
+
+      {/* Testimoni */}
+      <div className="mt-32">
+        <h1 className="text-4xl/normal text-center font-semibold">Testimoni</h1>
+        <p className="text-base/loose text-center">"Lihat bagaimana klien kami merasakan layanan Framework Visual. Cerita nyata, hasil nyata — saatnya giliran Anda membangun visual yang mengesankan!"</p>
+
+        <div className="mt-25 grid lg:grid-cols-3 gap-10 md:grid-cols-2 grid-cols-1">
+
+          <div className="shadow-2xl p-4 rounded-2xl">
+            <Image
+              src={`/assets/proyek11.png`}
+              alt={`Proyek`}
+              className="rounded-tl-2xl rounded-tr-2xl"
+              priority
+              width={1250}
+              height={1250}
+            />
+            <h1 className="mt-6 mb-3 text-2xl font-semibold">Wedding Photos</h1>
+            <p className="text-base/loose">"Hasil fotonya indah dan profesional, tim ramah dan bantu abadikan momen spesial kami."</p>
+            <div className="mt-6 mb-3">
+              <Link
+                href="/detail"
+                className="bg-slate-700 text-white text-center p-3 rounded-xl hover:bg-slate-600 cursor-pointer"
+              >
+                Lihat Detail
+              </Link>
+            </div>
+          </div>
+
+          <div className="shadow-2xl p-4 rounded-2xl">
+            <Image
+              src={`/assets/proyek22.png`}
+              alt={`Proyek`}
+              className="rounded-tl-2xl rounded-tr-2xl"
+              priority
+              width={1250}
+              height={1250}
+            />
+            <h1 className="mt-6 mb-3 text-2xl font-semibold">Pebisnis Personal Branding</h1>
+            <p className="text-base/loose">"Kontennya sangat mendukung citra profesional saya. Visualnya konsisten, tajam, dan penuh karakter."</p>
+            <div className="mt-6 mb-3">
+              <Link
+                href="/detail"
+                className="bg-slate-700 text-white text-center p-3 rounded-xl hover:bg-slate-600 cursor-pointer"
+              >
+                Lihat Detail
+              </Link>
+            </div>
+          </div>
+
+          <div className="shadow-2xl p-4 rounded-2xl">
+            <Image
+              src={`/assets/proyek33.jpg`}
+              alt={`Proyek`}
+              className="rounded-tl-2xl rounded-tr-2xl"
+              priority
+              width={1250}
+              height={1250}
+            />
+            <h1 className="mt-6 mb-3 text-2xl font-semibold">Event Organizer </h1>
+            <p className="text-base/loose">"Dokumentasi acaranya luar biasa! Semua momen penting tertangkap jelas, hasilnya sangat memuaskan."</p>
+            <div className="mt-6 mb-3">
+              <Link
+                href="/detail"
+                className="bg-slate-700 text-white text-center p-3 rounded-xl hover:bg-slate-600 cursor-pointer"
+              >
+                Lihat Detail
+              </Link>
+            </div>
+          </div>
+
+          <div className="shadow-2xl p-4 rounded-2xl">
+            <Image
+              src={`/assets/proyek44.jpg`}
+              alt={`Proyek`}
+              className="rounded-tl-2xl rounded-tr-2xl"
+              priority
+              width={1250}
+              height={1250}
+            />
+            <h1 className="mt-6 mb-3 text-2xl font-semibold">UMKM Pemilik Produk</h1>
+            <p className="text-base/loose">"Konten foto produknya sangat menarik dan profesional, bantu tingkatkan penjualan dan branding kami!"</p>
+            <div className="mt-6 mb-3">
+              <Link
+                href="/detail"
+                className="bg-slate-700 text-white text-center p-3 rounded-xl hover:bg-slate-600 cursor-pointer"
+              >
+                Lihat Detail
+              </Link>
+            </div>
+          </div>
+
+          <div className="shadow-2xl p-4 rounded-2xl">
+            <Image
+              src={`/assets/proyek55.jpg`}
+              alt={`Proyek`}
+              className="rounded-tl-2xl rounded-tr-2xl"
+              priority
+              width={1250}
+              height={1250}
+            />
+            <h1 className="mt-6 mb-3 text-2xl font-semibold">Katalog & Logo</h1>
+            <p className="text-base/loose">"Desain katalog dan logo kami terlihat profesional, sesuai brand dan sangat memikat pelanggan!"</p>
+            <div className="mt-6 mb-3">
+              <Link
+                href="/detail"
+                className="bg-slate-700 text-white text-center p-3 rounded-xl hover:bg-slate-600 cursor-pointer"
+              >
+                Lihat Detail
+              </Link>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      {/* Testimoni */}
+
+      {/* Kontak */}
+
+      <div className="mt-32">
+        <h1 className="text-4xl/normal text-center font-semibold">Kontak Kami</h1>
+        <p className="text-base/loose text-center">"Tertarik untuk bekerja sama atau memiliki pertanyaan? Hubungi kami dan mulai bangun visual cerita Anda bersama Framework Visual. Kami siap membantu!"</p>
+        <div className="mt-32 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+          <div>
+            <h2 className="text-3xl font-bold mb-4">Framework Visual</h2>
+
+            <div  className="flex gap-3 mb-4">
+              <a
+                href="https://instagram.com/akun_kamu"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-pink-500 hover:text-pink-600"
+              >
+                <i className="ri-instagram-fill ri-2x"></i>
+              </a>
+              <a
+                href="https://tiktok.com/@akun_kamu"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-pink-500 hover:text-pink-600"
+              >
+                <i className="ri-tiktok-fill ri-2x"></i>
+              </a>
+              <a
+                href="https://youtube.com/@akun_kamu"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-pink-500 hover:text-pink-600"
+              >
+                <i className="ri-youtube-fill ri-2x"></i>
+              </a>
+            </div>
+          </div>
+
+          <div className="bg-slate-100 p-4 rounded-xl shadow w-full md:w-auto">
+            <h3 className="text-xl font-semibold mb-2">Kontak Kami</h3>
+            <ul className="space-y-2 text-base text-slate-700">
+              <li className="flex items-center gap-2">
+                <i className="ri-mail-line text-slate-600"></i>
+                <span>Frameworkvisual@company.com</span>
+              </li>
+              <li className="flex items-center gap-2">
+                <i className="ri-phone-line text-slate-600"></i>
+                <span>+62 838 291 047 61</span>
+              </li>
+              <li className="flex items-center gap-2">
+                <i className="ri-map-pin-line text-slate-600"></i>
+                <span>Jl. Kurungan Nyawa No.103 Pesawaran Lampung</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      {/* Kontak */}
+    </>
   );
 }
