@@ -229,7 +229,7 @@ export default function Home() {
       {/* Testimoni */}
       <div className="mt-32">
         <h1 className="text-4xl/normal text-center font-semibold">Testimoni</h1>
-        <p className="text-base/loose text-center">"Lihat bagaimana klien kami merasakan layanan Framework Visual. Cerita nyata, hasil nyata — saatnya giliran Anda membangun visual yang mengesankan!"</p>
+        <p className="text-base/loose text-center">Lihat bagaimana klien kami merasakan layanan Framework Visual. Cerita nyata, hasil nyata — saatnya giliran Anda membangun visual yang mengesankan!</p>
 
         <div className="mt-25 grid lg:grid-cols-3 gap-10 md:grid-cols-2 grid-cols-1">
 
@@ -243,7 +243,7 @@ export default function Home() {
               height={1250}
             />
             <h1 className="mt-6 mb-3 text-2xl font-semibold">Wedding Photos</h1>
-            <p className="text-base/loose">"Hasil fotonya indah dan profesional, tim ramah dan bantu abadikan momen spesial kami."</p>
+            <p className="text-base/loose">Hasil fotonya indah dan profesional, tim ramah dan bantu abadikan momen spesial kami.</p>
             <div className="mt-6 mb-3">
               <Link
                 href="/detail"
@@ -285,7 +285,7 @@ export default function Home() {
               height={1250}
             />
             <h1 className="mt-6 mb-3 text-2xl font-semibold">Event Organizer </h1>
-            <p className="text-base/loose">"Dokumentasi acaranya luar biasa! Semua momen penting tertangkap jelas, hasilnya sangat memuaskan."</p>
+            <p className="text-base/loose">Dokumentasi acaranya luar biasa! Semua momen penting tertangkap jelas, hasilnya sangat memuaskan.</p>
             <div className="mt-6 mb-3">
               <Link
                 href="/detail"
@@ -306,7 +306,7 @@ export default function Home() {
               height={1250}
             />
             <h1 className="mt-6 mb-3 text-2xl font-semibold">UMKM Pemilik Produk</h1>
-            <p className="text-base/loose">"Konten foto produknya sangat menarik dan profesional, bantu tingkatkan penjualan dan branding kami!"</p>
+            <p className="text-base/loose">Konten foto produknya sangat menarik dan profesional, bantu tingkatkan penjualan dan branding kami!</p>
             <div className="mt-6 mb-3">
               <Link
                 href="/detail"
@@ -327,7 +327,7 @@ export default function Home() {
               height={1250}
             />
             <h1 className="mt-6 mb-3 text-2xl font-semibold">Katalog & Logo</h1>
-            <p className="text-base/loose">"Desain katalog dan logo kami terlihat profesional, sesuai brand dan sangat memikat pelanggan!"</p>
+            <p className="text-base/loose">Desain katalog dan logo kami terlihat profesional, sesuai brand dan sangat memikat pelanggan!</p>
             <div className="mt-6 mb-3">
               <Link
                 href="/detail"
@@ -346,12 +346,12 @@ export default function Home() {
 
       <div className="mt-32">
         <h1 className="text-4xl/normal text-center font-semibold">Kontak Kami</h1>
-        <p className="text-base/loose text-center">"Tertarik untuk bekerja sama atau memiliki pertanyaan? Hubungi kami dan mulai bangun visual cerita Anda bersama Framework Visual. Kami siap membantu!"</p>
+        <p className="text-base/loose text-center">Tertarik untuk bekerja sama atau memiliki pertanyaan? Hubungi kami dan mulai bangun visual cerita Anda bersama Framework Visual. Kami siap membantu!</p>
         <div className="mt-32 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
           <div>
             <h2 className="text-3xl font-bold mb-4">Framework Visual</h2>
 
-            <div  className="flex gap-3 mb-4">
+            <div className="flex gap-3 mb-4">
               <a
                 href="https://instagram.com/akun_kamu"
                 target="_blank"
