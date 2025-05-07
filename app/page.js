@@ -64,7 +64,7 @@ export default function Home() {
               </li>
               <li className="flex items-start gap-2 font-bold text-xl">
                 <i className="ri-check-line text-green-600 mt-0"></i>
-                Cocok untuk UKM yang ingin "naik kelas" lewat branding kuat.
+                Cocok untuk UKM yang ingin naik kelas lewat branding kuat.
               </li>
             </ul>
           </div>
@@ -264,7 +264,7 @@ export default function Home() {
               height={1250}
             />
             <h1 className="mt-6 mb-3 text-2xl font-semibold">Pebisnis Personal Branding</h1>
-            <p className="text-base/loose">"Kontennya sangat mendukung citra profesional saya. Visualnya konsisten, tajam, dan penuh karakter."</p>
+            <p className="text-base/loose">Kontennya sangat mendukung citra profesional saya. Visualnya konsisten, tajam, dan penuh karakter.</p>
             <div className="mt-6 mb-3">
               <Link
                 href="/detail"
