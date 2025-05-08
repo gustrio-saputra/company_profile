@@ -6,11 +6,12 @@ export default function Home() {
   return (
     <>
       {/* title */}
-      <div className="py-20">
-        <h1 className="sm:text-6xl/tight text-5xl/tight sm:text-center text-left ">
-          Bangun Cerita Visual <br />Untuk Bisnis Anda!
-        </h1>
-      </div>
+      <div id="beranda" className="py-20 bg-gradient-to-r from-indigo-600 to-blue-500 text-white">
+  <h1 className="sm:text-6xl text-5xl font-extrabold sm:text-center text-left leading-tight tracking-wide sm:max-w-4xl mx-auto px-4 sm:px-0">
+    Bangun Cerita Visual <br />Untuk Bisnis Anda!
+  </h1>
+</div>
+
       {/* title */}
 
       {/* Hero Image */}
@@ -41,7 +42,7 @@ export default function Home() {
             </p>
             <p className="text-base/relaxed text-slate-700 mb-6 text-justify text-xl">
               Framework Visual adalah studio kreatif yang berfokus pada penyediaan solusi visual
-              profesional untuk kebutuhan bisnis dan personal. Dengan pengalaman lebih dari 5 tahun,
+              profesional untuk kebutuhan bisnis dan personal. Dengan pengalaman lebih dari 15 tahun,
               kami telah membantu ratusan klien dalam membangun identitas visual yang kuat melalui
               fotografi, videografi, konten digital, dan desain grafis yang inovatif.
             </p>
@@ -73,23 +74,23 @@ export default function Home() {
       {/* End Tentang Kami */}
 
       {/* Layanan */}
-      <div className="mt-32">
+      <div id="layanan" className="pt-28">
         <h1 className="text-4xl/normal text-center font-semibold">Layanan Dan Produk Kami</h1>
         <div className="grid lg:grid-cols-3 mt-32 gap-10 md:grid-cols-2 grid-cols-1">
           <div className="shadow-2xl p-7 rounded-2xl">
             <i className="ri-money-dollar-circle-fill ri-3x text-slate-700"></i>
             <p className="font-semibold text-2xl/normal mb-2">Harga Terbaik</p>
-            <p className="text-base/loose">lorem ipsum 15 kata</p>
+            <p className="text-base/loose">Investasi cerdas, hasil luar biasa.</p>
           </div>
           <div className="shadow-2xl p-7 rounded-2xl">
             <i className="ri-service-fill ri-3x text-slate-700"></i>
             <p className="font-semibold text-2xl/normal mb-2">Full Service Terbaik</p>
-            <p className="text-base/loose">lorem ipsum 15 kata</p>
+            <p className="text-base/loose">Layanan end-to-end yang tak tertandingi.</p>
           </div>
           <div className="shadow-2xl p-7 rounded-2xl">
             <i className="ri-star-s-fill ri-3x text-slate-700"></i>
             <p className="font-semibold text-2xl/normal mb-2">Hasil Terbaik</p>
-            <p className="text-base/loose">lorem ipsum 15 kata</p>
+            <p className="text-base/loose">Hasil kreatif yang melebihi harapan dan standar.</p>
           </div>
         </div>
         <div className="mt-25 grid lg:grid-cols-3 gap-10 md:grid-cols-2 grid-cols-1">
@@ -227,9 +228,12 @@ export default function Home() {
       {/* Layanan */}
 
       {/* Testimoni */}
-      <div className="mt-32">
+      <div id="testimoni" className="pt-28">
         <h1 className="text-4xl/normal text-center font-semibold">Testimoni</h1>
-        <p className="text-base/loose text-center">Lihat bagaimana klien kami merasakan layanan Framework Visual. Cerita nyata, hasil nyata — saatnya giliran Anda membangun visual yang mengesankan!</p>
+        <p className="text-xl text-center text-gray-700 font-semibold leading-relaxed mt-6 max-w-3xl mx-auto px-4 md:px-0">
+  Lihat bagaimana klien kami merasakan layanan Framework Visual. <span className="text-indigo-600 font-bold">Cerita nyata, hasil nyata</span> — saatnya giliran Anda membangun visual yang mengesankan!
+</p>
+
 
         <div className="mt-25 grid lg:grid-cols-3 gap-10 md:grid-cols-2 grid-cols-1">
 
@@ -344,9 +348,12 @@ export default function Home() {
 
       {/* Kontak */}
 
-      <div className="mt-32">
+      <div id="kontak" className="mt-32">
         <h1 className="text-4xl/normal text-center font-semibold">Kontak Kami</h1>
-        <p className="text-base/loose text-center">Tertarik untuk bekerja sama atau memiliki pertanyaan? Hubungi kami dan mulai bangun visual cerita Anda bersama Framework Visual. Kami siap membantu!</p>
+        <p className="text-lg text-center text-gray-800 font-medium leading-relaxed mt-4 max-w-2xl mx-auto px-4 md:px-0">
+  Tertarik untuk <span className="text-indigo-600 font-semibold">bekerja sama</span> atau memiliki <span className="text-indigo-600 font-semibold">pertanyaan</span>? Hubungi kami dan mulai bangun <span className="text-indigo-600 font-semibold">visual cerita Anda</span> bersama Framework Visual. Kami siap membantu!
+</p>
+
         <div className="mt-32 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
           <div>
             <h2 className="text-3xl font-bold mb-4">Framework Visual</h2>
